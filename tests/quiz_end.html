@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест по Эндер миру</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .question { margin-bottom: 20px; }
+    .btn-check, .btn-back {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-back { background-color: #555; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minecraft: Тест по Эндер миру</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../guides.html">Гайды</a></li>
+        <li><a href="../mobs.html">Враждебные мобы</a></li>
+        <li><a href="../tests.html">Тесты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <!-- Вопрос 1 -->
+      <div class="question">
+        <p><strong>Вопрос 1:</strong> Как называется измерение, где обитает Эндер мир?</p>
+        <label><input type="radio" name="q1" value="1"> Эндер мир</label><br>
+        <label><input type="radio" name="q1" value="0"> Overworld</label><br>
+        <label><input type="radio" name="q1" value="0"> Нижний мир</label><br>
+        <label><input type="radio" name="q1" value="0"> Фэнтези мир</label>
+      </div>
+
+      <!-- Вопрос 2 -->
+      <div class="question">
+        <p><strong>Вопрос 2:</strong> Какой моб является главным боссом Эндер мира?</p>
+        <label><input type="radio" name="q2" value="1"> Дракон Края</label><br>
+        <label><input type="radio" name="q2" value="0"> Эндермен</label><br>
+        <label><input type="radio" name="q2" value="0"> Крипер</label><br>
+        <label><input type="radio" name="q2" value="0"> Скелет</label>
+      </div>
+
+      <!-- Вопрос 3 -->
+      <div class="question">
+        <p><strong>Вопрос 3:</strong> Какой блок является основой для создания портала в Эндер мир?</p>
+        <label><input type="radio" name="q3" value="1"> Эндпортал</label><br>
+        <label><input type="radio" name="q3" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q3" value="0"> Нижнекирпич</label><br>
+        <label><input type="radio" name="q3" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 4 -->
+      <div class="question">
+        <p><strong>Вопрос 4:</strong> Какой моб характерен для Эндер мира и перемещается телепортацией?</p>
+        <label><input type="radio" name="q4" value="1"> Эндермен</label><br>
+        <label><input type="radio" name="q4" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q4" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q4" value="0"> Крипер</label>
+      </div>
+
+      <!-- Вопрос 5 -->
+      <div class="question">
+        <p><strong>Вопрос 5:</strong> Какой предмет нужен для активации Эндпортала?</p>
+        <label><input type="radio" name="q5" value="1"> Глаз Эндера</label><br>
+        <label><input type="radio" name="q5" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q5" value="0"> Книга</label><br>
+        <label><input type="radio" name="q5" value="0"> Золото</label>
+      </div>
+
+      <!-- Вопрос 6 -->
+      <div class="question">
+        <p><strong>Вопрос 6:</strong> Какой блок НЕ встречается в Эндер мире?</p>
+        <label><input type="radio" name="q6" value="1"> Дерево</label><br>
+        <label><input type="radio" name="q6" value="0"> Камень</label><br>
+        <label><input type="radio" name="q6" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q6" value="0"> Обсидиан</label>
+      </div>
+
+      <!-- Вопрос 7 -->
+      <div class="question">
+        <p><strong>Вопрос 7:</strong> Как называется типичный блок в Эндер мире?</p>
+        <label><input type="radio" name="q7" value="1"> Эндстоун</label><br>
+        <label><input type="radio" name="q7" value="0"> Нижнекирпич</label><br>
+        <label><input type="radio" name="q7" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q7" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 8 -->
+      <div class="question">
+        <p><strong>Вопрос 8:</strong> Какой эффект даёт нахождение в Эндер мире?</p>
+        <label><input type="radio" name="q8" value="1"> Плохая видимость</label><br>
+        <label><input type="radio" name="q8" value="0"> Быстрое восстановление здоровья</label><br>
+        <label><input type="radio" name="q8" value="0"> Мгновенное уничтожение блоков</label><br>
+        <label><input type="radio" name="q8" value="0"> Ускоренное движение</label>
+      </div>
+
+      <!-- Вопрос 9 -->
+      <div class="question">
+        <p><strong>Вопрос 9:</strong> Какой моб появляется в городах Эндер мира?</p>
+        <label><input type="radio" name="q9" value="1"> Эндермен</label><br>
+        <label><input type="radio" name="q9" value="0"> Крипер</label><br>
+        <label><input type="radio" name="q9" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q9" value="0"> Скелет</label>
+      </div>
+
+      <!-- Вопрос 10 -->
+      <div class="question">
+        <p><strong>Вопрос 10:</strong> Какой блок чаще всего используется для строительства в Эндере?</p>
+        <label><input type="radio" name="q10" value="1"> Эндстоун</label><br>
+        <label><input type="radio" name="q10" value="0"> Нижнекирпич</label><br>
+        <label><input type="radio" name="q10" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q10" value="0"> Дерево</label>
+      </div>
+
+      <!-- Вопрос 11 -->
+      <div class="question">
+        <p><strong>Вопрос 11:</strong> Какой моб обеспечивает перенос блоков в Эндер мире?</p>
+        <label><input type="radio" name="q11" value="1"> Эндермен</label><br>
+        <label><input type="radio" name="q11" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q11" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q11" value="0"> Крипер</label>
+      </div>
+
+      <!-- Вопрос 12 -->
+      <div class="question">
+        <p><strong>Вопрос 12:</strong> Какой предмет используется для изготовления Глаз Эндера?</p>
+        <label><input type="radio" name="q12" value="1"> Эндер жемчуг</label><br>
+        <label><input type="radio" name="q12" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q12" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q12" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 13 -->
+      <div class="question">
+        <p><strong>Вопрос 13:</strong> Какой блок используют для создания структуры портала Эндера?</p>
+        <label><input type="radio" name="q13" value="1"> Рамка портала</label><br>
+        <label><input type="radio" name="q13" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q13" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q13" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 14 -->
+      <div class="question">
+        <p><strong>Вопрос 14:</strong> Какой блок НЕ встречается в Эндер мире?</p>
+        <label><input type="radio" name="q14" value="1"> Дерево</label><br>
+        <label><input type="radio" name="q14" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q14" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q14" value="0"> Нижнекирпич</label>
+      </div>
+
+      <!-- Вопрос 15 -->
+      <div class="question">
+        <p><strong>Вопрос 15:</strong> Какой эффект оказывает присутствие Эндер жемчуга на игроке?</p>
+        <label><input type="radio" name="q15" value="1"> Телепортация</label><br>
+        <label><input type="radio" name="q15" value="0"> Снижение скорости</label><br>
+        <label><input type="radio" name="q15" value="0"> Повышение защиты</label><br>
+        <label><input type="radio" name="q15" value="0"> Ускорение добычи</label>
+      </div>
+
+      <!-- Вопрос 16 -->
+      <div class="question">
+        <p><strong>Вопрос 16:</strong> Какой тип мобов доминирует в Эндер городах?</p>
+        <label><input type="radio" name="q16" value="1"> Эндермены</label><br>
+        <label><input type="radio" name="q16" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q16" value="0"> Скелеты</label><br>
+        <label><input type="radio" name="q16" value="0"> Криперы</label>
+      </div>
+
+      <!-- Вопрос 17 -->
+      <div class="question">
+        <p><strong>Вопрос 17:</strong> Какой материал используется для создания Эндового зелья?</p>
+        <label><input type="radio" name="q17" value="1"> Эндер жемчуг</label><br>
+        <label><input type="radio" name="q17" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q17" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q17" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 18 -->
+      <div class="question">
+        <p><strong>Вопрос 18:</strong> Какой блок является уникальным для Эндер мира?</p>
+        <label><input type="radio" name="q18" value="1"> Эндстоун</label><br>
+        <label><input type="radio" name="q18" value="0"> Нижнекирпич</label><br>
+        <label><input type="radio" name="q18" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q18" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 19 -->
+      <div class="question">
+        <p><strong>Вопрос 19:</strong> Какой моб вызывает нарастание агрессии у Эндерменов?</p>
+        <label><input type="radio" name="q19" value="1"> Глаз Эндера</label><br>
+        <label><input type="radio" name="q19" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q19" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q19" value="0"> Дерево</label>
+      </div>
+
+      <!-- Вопрос 20 -->
+      <div class="question">
+        <p><strong>Вопрос 20:</strong> Какой блок используется для создания декоративных конструкций в Эндере?</p>
+        <label><input type="radio" name="q20" value="1"> Энд камень</label><br>
+        <label><input type="radio" name="q20" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q20" value="0"> Нижнекирпич</label><br>
+        <label><input type="radio" name="q20" value="0"> Дерево</label>
+      </div>
+
+      <!-- Вопрос 21 -->
+      <div class="question">
+        <p><strong>Вопрос 21:</strong> Какой эффект оказывает постоянное нахождение в Эндере?</p>
+        <label><input type="radio" name="q21" value="1"> Снижение зрения</label><br>
+        <label><input type="radio" name="q21" value="0"> Ускорение бега</label><br>
+        <label><input type="radio" name="q21" value="0"> Повышение прочности брони</label><br>
+        <label><input type="radio" name="q21" value="0"> Быстрое восстановление здоровья</label>
+      </div>
+
+      <!-- Вопрос 22 -->
+      <div class="question">
+        <p><strong>Вопрос 22:</strong> Какой материал НЕ используется в Эндер мире?</p>
+        <label><input type="radio" name="q22" value="1"> Дерево</label><br>
+        <label><input type="radio" name="q22" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q22" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q22" value="0"> Энд портальная рамка</label>
+      </div>
+
+      <!-- Вопрос 23 -->
+      <div class="question">
+        <p><strong>Вопрос 23:</strong> Какой элемент используется для создания механизмов в Эндере?</p>
+        <label><input type="radio" name="q23" value="1"> Пыль Эндера</label><br>
+        <label><input type="radio" name="q23" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q23" value="0"> Эндстоун</label><br>
+        <label><input type="radio" name="q23" value="0"> Кирпич</label>
+      </div>
+
+      <!-- Вопрос 24 -->
+      <div class="question">
+        <p><strong>Вопрос 24:</strong> Какой моб является признаком начала битвы с боссом в Эндере?</p>
+        <label><input type="radio" name="q24" value="1"> Дракон Края</label><br>
+        <label><input type="radio" name="q24" value="0"> Эндермен</label><br>
+        <label><input type="radio" name="q24" value="0"> Крипер</label><br>
+        <label><input type="radio" name="q24" value="0"> Зомби</label>
+      </div>
+
+      <!-- Вопрос 25 -->
+      <div class="question">
+        <p><strong>Вопрос 25:</strong> Какой предмет НЕ используется для создания портала в Эндер мир?</p>
+        <label><input type="radio" name="q25" value="1"> Дерево</label><br>
+        <label><input type="radio" name="q25" value="0"> Эндпортальная рамка</label><br>
+        <label><input type="radio" name="q25" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q25" value="0"> Эндстоун</label>
+      </div>
+
+      <button type="button" class="btn-check" onclick="checkQuiz()">Проверить результат</button>
+      <a href="../tests.html" class="btn-back">Назад</a>
+    </form>
+    <p id="result"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Minecraft Fan Site | Все права защищены</p>
+  </footer>
+
+  <script>
+    function checkQuiz() {
+      let score = 0;
+      for (let i = 1; i <= 25; i++) {
+        const selected = document.querySelector('input[name="q' + i + '"]:checked');
+        if (selected && selected.value === '1') {
+          score++;
+        }
+      }
+      document.getElementById("result").innerText = "Ты набрал " + score + " из 25 баллов!";
+    }
+  </script>
+</body>
+</html>

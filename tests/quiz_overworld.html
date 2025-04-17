@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест по Верхнему миру</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .question { margin-bottom: 20px; }
+    .btn-check, .btn-back {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-back { background-color: #555; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minecraft: Тест по Верхнему миру</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../guides.html">Гайды</a></li>
+        <li><a href="../mobs.html">Враждебные мобы</a></li>
+        <li><a href="../tests.html">Тесты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <!-- Вопрос 1 -->
+      <div class="question">
+        <p><strong>Вопрос 1:</strong> Какой биом является самым обширным в Верхнем мире?</p>
+        <label><input type="radio" name="q1" value="1"> Равнина</label><br>
+        <label><input type="radio" name="q1" value="0"> Лес</label><br>
+        <label><input type="radio" name="q1" value="0"> Пустыня</label><br>
+        <label><input type="radio" name="q1" value="0"> Тундра</label>
+      </div>
+
+      <!-- Вопрос 2 -->
+      <div class="question">
+        <p><strong>Вопрос 2:</strong> Какой материал чаще всего используется для создания пола в домах?</p>
+        <label><input type="radio" name="q2" value="1"> Дерево</label><br>
+        <label><input type="radio" name="q2" value="0"> Песок</label><br>
+        <label><input type="radio" name="q2" value="0"> Камень</label><br>
+        <label><input type="radio" name="q2" value="0"> Трава</label>
+      </div>
+
+      <!-- Вопрос 3 -->
+      <div class="question">
+        <p><strong>Вопрос 3:</strong> Какое растение дает красный краситель?</p>
+        <label><input type="radio" name="q3" value="1"> Мак</label><br>
+        <label><input type="radio" name="q3" value="0"> Тюльпан</label><br>
+        <label><input type="radio" name="q3" value="0"> Орхидея</label><br>
+        <label><input type="radio" name="q3" value="0"> Лилия</label>
+      </div>
+
+      <!-- Вопрос 4 -->
+      <div class="question">
+        <p><strong>Вопрос 4:</strong> Какой из перечисленных мобов появляется чаще всего в темное время суток?</p>
+        <label><input type="radio" name="q4" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q4" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q4" value="0"> Крипер</label><br>
+        <label><input type="radio" name="q4" value="1"> Все перечисленные</label>
+      </div>
+
+      <!-- Вопрос 5 -->
+      <div class="question">
+        <p><strong>Вопрос 5:</strong> Как принято измерять расстояния в игре?</p>
+        <label><input type="radio" name="q5" value="0"> Метрами</label><br>
+        <label><input type="radio" name="q5" value="1"> Кубами</label><br>
+        <label><input type="radio" name="q5" value="0"> Блоками</label><br>
+        <label><input type="radio" name="q5" value="0"> Ячейками</label>
+      </div>
+
+      <!-- Вопрос 6 -->
+      <div class="question">
+        <p><strong>Вопрос 6:</strong> Какой из перечисленных материалов не горит?</p>
+        <label><input type="radio" name="q6" value="1"> Камень</label><br>
+        <label><input type="radio" name="q6" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q6" value="0"> Глина</label><br>
+        <label><input type="radio" name="q6" value="0"> Песок</label>
+      </div>
+
+      <!-- Вопрос 7 -->
+      <div class="question">
+        <p><strong>Вопрос 7:</strong> Какой биом характеризуется густой растительностью и высокими деревьями?</p>
+        <label><input type="radio" name="q7" value="1"> Лесной</label><br>
+        <label><input type="radio" name="q7" value="0"> Таёжный</label><br>
+        <label><input type="radio" name="q7" value="0"> Саванна</label><br>
+        <label><input type="radio" name="q7" value="0"> Пустыня</label>
+      </div>
+
+      <!-- Вопрос 8 -->
+      <div class="question">
+        <p><strong>Вопрос 8:</strong> Какой блок нельзя добыть железной киркой?</p>
+        <label><input type="radio" name="q8" value="1"> Обсидиан</label><br>
+        <label><input type="radio" name="q8" value="0"> Редстоун</label><br>
+        <label><input type="radio" name="q8" value="0"> Лапис-лазурит</label><br>
+        <label><input type="radio" name="q8" value="0"> Уголь</label>
+      </div>
+
+      <!-- Вопрос 9 -->
+      <div class="question">
+        <p><strong>Вопрос 9:</strong> Как называется растение, из которого делают бумагу?</p>
+        <label><input type="radio" name="q9" value="1"> Тростник</label><br>
+        <label><input type="radio" name="q9" value="0"> Кактус</label><br>
+        <label><input type="radio" name="q9" value="0"> Пень</label><br>
+        <label><input type="radio" name="q9" value="0"> Листья</label>
+      </div>
+
+      <!-- Вопрос 10 -->
+      <div class="question">
+        <p><strong>Вопрос 10:</strong> Какой блок используется для создания печки?</p>
+        <label><input type="radio" name="q10" value="1"> Камень</label><br>
+        <label><input type="radio" name="q10" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q10" value="0"> Песок</label><br>
+        <label><input type="radio" name="q10" value="0"> Глина</label>
+      </div>
+
+      <!-- Вопрос 11 -->
+      <div class="question">
+        <p><strong>Вопрос 11:</strong> Какой моб даёт опыт при убийстве?</p>
+        <label><input type="radio" name="q11" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q11" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q11" value="0"> Крипер</label><br>
+        <label><input type="radio" name="q11" value="1"> Все перечисленные</label>
+      </div>
+
+      <!-- Вопрос 12 -->
+      <div class="question">
+        <p><strong>Вопрос 12:</strong> Какой материал НЕ используется для изготовления факелов?</p>
+        <label><input type="radio" name="q12" value="1"> Бутылка</label><br>
+        <label><input type="radio" name="q12" value="0"> Уголь</label><br>
+        <label><input type="radio" name="q12" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q12" value="0"> Палка</label>
+      </div>
+
+      <!-- Вопрос 13 -->
+      <div class="question">
+        <p><strong>Вопрос 13:</strong> Какой блок используется для выращивания пшеницы?</p>
+        <label><input type="radio" name="q13" value="1"> Земля</label><br>
+        <label><input type="radio" name="q13" value="0"> Подсолнух</label><br>
+        <label><input type="radio" name="q13" value="0"> Бетон</label><br>
+        <label><input type="radio" name="q13" value="0"> Обсидиан</label>
+      </div>
+
+      <!-- Вопрос 14 -->
+      <div class="question">
+        <p><strong>Вопрос 14:</strong> Какой инструмент работает быстрее всего при рубке дерева?</p>
+        <label><input type="radio" name="q14" value="1"> Топор</label><br>
+        <label><input type="radio" name="q14" value="0"> Молот</label><br>
+        <label><input type="radio" name="q14" value="0"> Кирка</label><br>
+        <label><input type="radio" name="q14" value="0"> Лопата</label>
+      </div>
+
+      <!-- Вопрос 15 -->
+      <div class="question">
+        <p><strong>Вопрос 15:</strong> Какой биом содержит много водоемов?</p>
+        <label><input type="radio" name="q15" value="1"> Океан</label><br>
+        <label><input type="radio" name="q15" value="0"> Горы</label><br>
+        <label><input type="radio" name="q15" value="0"> Пустыня</label><br>
+        <label><input type="radio" name="q15" value="0"> Лес</label>
+      </div>
+
+      <!-- Вопрос 16 -->
+      <div class="question">
+        <p><strong>Вопрос 16:</strong> Какую породу дерева не встречают в Minecraft?</p>
+        <label><input type="radio" name="q16" value="1"> Клен</label><br>
+        <label><input type="radio" name="q16" value="0"> Дуб</label><br>
+        <label><input type="radio" name="q16" value="0"> Берёза</label><br>
+        <label><input type="radio" name="q16" value="0"> Сосна</label>
+      </div>
+
+      <!-- Вопрос 17 -->
+      <div class="question">
+        <p><strong>Вопрос 17:</strong> Какой материал НЕ требуется для создания стола зачарования?</p>
+        <label><input type="radio" name="q17" value="1"> Кирпич</label><br>
+        <label><input type="radio" name="q17" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q17" value="0"> Алмазы</label><br>
+        <label><input type="radio" name="q17" value="0"> Книга</label>
+      </div>
+
+      <!-- Вопрос 18 -->
+      <div class="question">
+        <p><strong>Вопрос 18:</strong> Какой моб взрывается при приближении к игроку?</p>
+        <label><input type="radio" name="q18" value="1"> Крипер</label><br>
+        <label><input type="radio" name="q18" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q18" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q18" value="0"> Паук</label>
+      </div>
+
+      <!-- Вопрос 19 -->
+      <div class="question">
+        <p><strong>Вопрос 19:</strong> Какой предмет используется для активации редстоун-схем?</p>
+        <label><input type="radio" name="q19" value="1"> Рычаг</label><br>
+        <label><input type="radio" name="q19" value="0"> Табличка</label><br>
+        <label><input type="radio" name="q19" value="0"> Книга</label><br>
+        <label><input type="radio" name="q19" value="0"> Факел</label>
+      </div>
+
+      <!-- Вопрос 20 -->
+      <div class="question">
+        <p><strong>Вопрос 20:</strong> Какой блок является основой для создания механических схем?</p>
+        <label><input type="radio" name="q20" value="1"> Редстоун</label><br>
+        <label><input type="radio" name="q20" value="0"> Обсидиан</label><br>
+        <label><input type="radio" name="q20" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q20" value="0"> Песок</label>
+      </div>
+
+      <!-- Вопрос 21 -->
+      <div class="question">
+        <p><strong>Вопрос 21:</strong> Какой моб имеет увеличенный шанс появиться в полнолуние?</p>
+        <label><input type="radio" name="q21" value="1"> Эндермен</label><br>
+        <label><input type="radio" name="q21" value="0"> Зомби</label><br>
+        <label><input type="radio" name="q21" value="0"> Скелет</label><br>
+        <label><input type="radio" name="q21" value="0"> Крипер</label>
+      </div>
+
+      <!-- Вопрос 22 -->
+      <div class="question">
+        <p><strong>Вопрос 22:</strong> Какой блок используется для создания портала в Нижний мир?</p>
+        <label><input type="radio" name="q22" value="1"> Обсидиан</label><br>
+        <label><input type="radio" name="q22" value="0"> Камень</label><br>
+        <label><input type="radio" name="q22" value="0"> Дерево</label><br>
+        <label><input type="radio" name="q22" value="0"> Бетон</label>
+      </div>
+
+      <!-- Вопрос 23 -->
+      <div class="question">
+        <p><strong>Вопрос 23:</strong> Какой предмет используется для плавки руды?</p>
+        <label><input type="radio" name="q23" value="1"> Печь</label><br>
+        <label><input type="radio" name="q23" value="0"> Кузница</label><br>
+        <label><input type="radio" name="q23" value="0"> Верстак</label><br>
+        <label><input type="radio" name="q23" value="0"> Стол кузнеца</label>
+      </div>
+
+      <!-- Вопрос 24 -->
+      <div class="question">
+        <p><strong>Вопрос 24:</strong> Как называется измерение, в котором находится Верхний мир?</p>
+        <label><input type="radio" name="q24" value="1"> Overworld</label><br>
+        <label><input type="radio" name="q24" value="0"> Nether</label><br>
+        <label><input type="radio" name="q24" value="0"> End</label><br>
+        <label><input type="radio" name="q24" value="0"> Другой мир</label>
+      </div>
+
+      <!-- Вопрос 25 -->
+      <div class="question">
+        <p><strong>Вопрос 25:</strong> Какой предмет НЕ используется для создания компаса?</p>
+        <label><input type="radio" name="q25" value="1"> Обсидиан</label><br>
+        <label><input type="radio" name="q25" value="0"> Железо</label><br>
+        <label><input type="radio" name="q25" value="0"> Редстоун</label><br>
+        <label><input type="radio" name="q25" value="0"> Золото</label>
+      </div>
+
+      <button type="button" class="btn-check" onclick="checkQuiz()">Проверить результат</button>
+      <a href="../tests.html" class="btn-back">Назад</a>
+    </form>
+    <p id="result"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Minecraft Fan Site | Все права защищены</p>
+  </footer>
+
+  <script>
+    function checkQuiz() {
+      let score = 0;
+      for (let i = 1; i <= 25; i++) {
+        const selected = document.querySelector('input[name="q' + i + '"]:checked');
+        if (selected && selected.value === '1') {
+          score++;
+        }
+      }
+      document.getElementById("result").innerText = "Ты набрал " + score + " из 25 баллов!";
+    }
+  </script>
+</body>
+</html>

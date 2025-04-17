@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест по истории Minecraft</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .question { margin-bottom: 20px; }
+    .btn-check, .btn-back {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-back { background-color: #555; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minecraft: Тест по истории</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../guides.html">Гайды</a></li>
+        <li><a href="../mobs.html">Враждебные мобы</a></li>
+        <li><a href="../tests.html">Тесты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <!-- Вопрос 1 -->
+      <div class="question">
+        <p><strong>Вопрос 1:</strong> В каком году была выпущена первая альфа-версия Minecraft?</p>
+        <label><input type="radio" name="q1" value="1"> 2009</label><br>
+        <label><input type="radio" name="q1" value="0"> 2010</label><br>
+        <label><input type="radio" name="q1" value="0"> 2011</label><br>
+        <label><input type="radio" name="q1" value="0"> 2008</label>
+      </div>
+
+      <!-- Вопрос 2 -->
+      <div class="question">
+        <p><strong>Вопрос 2:</strong> Кто является создателем Minecraft?</p>
+        <label><input type="radio" name="q2" value="1"> Маркус "Notch" Перссон</label><br>
+        <label><input type="radio" name="q2" value="0"> Стив Джобс</label><br>
+        <label><input type="radio" name="q2" value="0"> Билл Гейтс</label><br>
+        <label><input type="radio" name="q2" value="0"> Илон Маск</label>
+      </div>
+
+      <!-- Вопрос 3 -->
+      <div class="question">
+        <p><strong>Вопрос 3:</strong> Как называется компания, основанная создателем Minecraft?</p>
+        <label><input type="radio" name="q3" value="1"> Mojang</label><br>
+        <label><input type="radio" name="q3" value="0"> Microsoft</label><br>
+        <label><input type="radio" name="q3" value="0"> Electronic Arts</label><br>
+        <label><input type="radio" name="q3" value="0"> Valve</label>
+      </div>
+
+      <!-- Вопрос 4 -->
+      <div class="question">
+        <p><strong>Вопрос 4:</strong> Когда Minecraft был официально выпущен?</p>
+        <label><input type="radio" name="q4" value="1"> 2011</label><br>
+        <label><input type="radio" name="q4" value="0"> 2009</label><br>
+        <label><input type="radio" name="q4" value="0"> 2013</label><br>
+        <label><input type="radio" name="q4" value="0"> 2010</label>
+      </div>
+
+      <!-- Вопрос 5 -->
+      <div class="question">
+        <p><strong>Вопрос 5:</strong> Какое событие стало переломным моментом в развитии Minecraft?</p>
+        <label><input type="radio" name="q5" value="1"> Официальный релиз в 2011 году</label><br>
+        <label><input type="radio" name="q5" value="0"> Переименование игры</label><br>
+        <label><input type="radio" name="q5" value="0"> Закрытие серверов</label><br>
+        <label><input type="radio" name="q5" value="0"> Выход с рынка</label>
+      </div>
+
+      <!-- Вопрос 6 -->
+      <div class="question">
+        <p><strong>Вопрос 6:</strong> Как назывался проект Minecraft на ранней стадии разработки?</p>
+        <label><input type="radio" name="q6" value="1"> Cave Game</label><br>
+        <label><input type="radio" name="q6" value="0"> Block World</label><br>
+        <label><input type="radio" name="q6" value="0"> Cube World</label><br>
+        <label><input type="radio" name="q6" value="0"> Pixel Adventure</label>
+      </div>
+
+      <!-- Вопрос 7 -->
+      <div class="question">
+        <p><strong>Вопрос 7:</strong> Какой режим игры способствовал популярности Minecraft в начале?</p>
+        <label><input type="radio" name="q7" value="1"> Режим выживания</label><br>
+        <label><input type="radio" name="q7" value="0"> Творческий режим</label><br>
+        <label><input type="radio" name="q7" value="0"> Режим приключений</label><br>
+        <label><input type="radio" name="q7" value="0"> Режим наблюдения</label>
+      </div>
+
+      <!-- Вопрос 8 -->
+      <div class="question">
+        <p><strong>Вопрос 8:</strong> Какая версия Minecraft стала первой доступной для широкой публики?</p>
+        <label><input type="radio" name="q8" value="1"> Альфа-версия</label><br>
+        <label><input type="radio" name="q8" value="0"> Бета-версия</label><br>
+        <label><input type="radio" name="q8" value="0"> Официальный релиз</label><br>
+        <label><input type="radio" name="q8" value="0"> Релиз в Steam</label>
+      </div>
+
+      <!-- Вопрос 9 -->
+      <div class="question">
+        <p><strong>Вопрос 9:</strong> Какой элемент стал символом Minecraft?</p>
+        <label><input type="radio" name="q9" value="1"> Блок</label><br>
+        <label><input type="radio" name="q9" value="0"> Моб</label><br>
+        <label><input type="radio" name="q9" value="0"> Форма персонажа</label><br>
+        <label><input type="radio" name="q9" value="0"> Музыка</label>
+      </div>
+
+      <!-- Вопрос 10 -->
+      <div class="question">
+        <p><strong>Вопрос 10:</strong> Какое обновление принесло в игру режим "Ад"?</p>
+        <label><input type="radio" name="q10" value="1"> Обновление "Nether"</label><br>
+        <label><input type="radio" name="q10" value="0"> Обновление "End"</label><br>
+        <label><input type="radio" name="q10" value="0"> Обновление "Beta"</label><br>
+        <label><input type="radio" name="q10" value="0"> Обновление "Alpha"</label>
+      </div>
+
+      <!-- Вопрос 11 -->
+      <div class="question">
+        <p><strong>Вопрос 11:</strong> Какой продукт стал широко известен благодаря фанатскому сообществу Minecraft?</p>
+        <label><input type="radio" name="q11" value="1"> Моды</label><br>
+        <label><input type="radio" name="q11" value="0"> DLC</label><br>
+        <label><input type="radio" name="q11" value="0"> Официальные расширения</label><br>
+        <label><input type="radio" name="q11" value="0"> Рекламные ролики</label>
+      </div>
+
+      <!-- Вопрос 12 -->
+      <div class="question">
+        <p><strong>Вопрос 12:</strong> Какой из элементов управления в Minecraft стал классическим?</p>
+        <label><input type="radio" name="q12" value="1"> ЛКМ для ударов</label><br>
+        <label><input type="radio" name="q12" value="0"> ПКМ для копирования</label><br>
+        <label><input type="radio" name="q12" value="0"> Средняя кнопка мыши</label><br>
+        <label><input type="radio" name="q12" value="0"> Колёсико мыши</label>
+      </div>
+
+      <!-- Вопрос 13 -->
+      <div class="question">
+        <p><strong>Вопрос 13:</strong> Какой из режимов игры впервые позволял строить без ограничений?</p>
+        <label><input type="radio" name="q13" value="1"> Творческий режим</label><br>
+        <label><input type="radio" name="q13" value="0"> Выживание</label><br>
+        <label><input type="radio" name="q13" value="0"> Приключения</label><br>
+        <label><input type="radio" name="q13" value="0"> Режим наблюдения</label>
+      </div>
+
+      <!-- Вопрос 14 -->
+      <div class="question">
+        <p><strong>Вопрос 14:</strong> Какая платформа стала первой для мобильной версии Minecraft?</p>
+        <label><input type="radio" name="q14" value="1"> Pocket Edition</label><br>
+        <label><input type="radio" name="q14" value="0"> Windows Phone</label><br>
+        <label><input type="radio" name="q14" value="0"> iOS</label><br>
+        <label><input type="radio" name="q14" value="0"> Android</label>
+      </div>
+
+      <!-- Вопрос 15 -->
+      <div class="question">
+        <p><strong>Вопрос 15:</strong> Какой элемент стал основным источником дохода после коммерческого успеха Minecraft?</p>
+        <label><input type="radio" name="q15" value="1"> Мерчандайзинг</label><br>
+        <label><input type="radio" name="q15" value="0"> Реклама</label><br>
+        <label><input type="radio" name="q15" value="0"> Платные моды</label><br>
+        <label><input type="radio" name="q15" value="0"> Подписка</label>
+      </div>
+
+      <!-- Вопрос 16 -->
+      <div class="question">
+        <p><strong>Вопрос 16:</strong> Как назывался специальный релиз Minecraft для школы?</p>
+        <label><input type="radio" name="q16" value="1"> Education Edition</label><br>
+        <label><input type="radio" name="q16" value="0"> Classroom Edition</label><br>
+        <label><input type="radio" name="q16" value="0"> School Edition</label><br>
+        <label><input type="radio" name="q16" value="0"> Student Edition</label>
+      </div>
+
+      <!-- Вопрос 17 -->
+      <div class="question">
+        <p><strong>Вопрос 17:</strong> Какая из версий Minecraft была представлена как экспериментальная?</p>
+        <label><input type="radio" name="q17" value="1"> Beta-версия</label><br>
+        <label><input type="radio" name="q17" value="0"> Альфа-версия</label><br>
+        <label><input type="radio" name="q17" value="0"> Официальный релиз</label><br>
+        <label><input type="radio" name="q17" value="0"> Pocket Edition</label>
+      </div>
+
+      <!-- Вопрос 18 -->
+      <div class="question">
+        <p><strong>Вопрос 18:</strong> Какой элемент стал важным для построения комьюнити вокруг Minecraft?</p>
+        <label><input type="radio" name="q18" value="1"> Форумы</label><br>
+        <label><input type="radio" name="q18" value="0"> Телевидение</label><br>
+        <label><input type="radio" name="q18" value="0"> Газеты</label><br>
+        <label><input type="radio" name="q18" value="0"> Радио</label>
+      </div>
+
+      <!-- Вопрос 19 -->
+      <div class="question">
+        <p><strong>Вопрос 19:</strong> Какой элемент истории Minecraft связан с сообществом игроков?</p>
+        <label><input type="radio" name="q19" value="1"> Создание модов</label><br>
+        <label><input type="radio" name="q19" value="0"> Разработка серверов</label><br>
+        <label><input type="radio" name="q19" value="0"> Рекламные кампании</label><br>
+        <label><input type="radio" name="q19" value="0"> Выпуски официальных дополнений</label>
+      </div>
+
+      <!-- Вопрос 20 -->
+      <div class="question">
+        <p><strong>Вопрос 20:</strong> Какое обновление стало поворотным моментом в истории Minecraft?</p>
+        <label><input type="radio" name="q20" value="1"> Обновление "Adventure Update"</label><br>
+        <label><input type="radio" name="q20" value="0"> Обновление "Alpha"</label><br>
+        <label><input type="radio" name="q20" value="0"> Обновление "Beta"</label><br>
+        <label><input type="radio" name="q20" value="0"> Обновление "Pocket Edition"</label>
+      </div>
+
+      <!-- Вопрос 21 -->
+      <div class="question">
+        <p><strong>Вопрос 21:</strong> Как называется ранняя версия Minecraft для ПК?</p>
+        <label><input type="radio" name="q21" value="1"> Java Edition</label><br>
+        <label><input type="radio" name="q21" value="0"> Bedrock Edition</label><br>
+        <label><input type="radio" name="q21" value="0"> Pocket Edition</label><br>
+        <label><input type="radio" name="q21" value="0"> Console Edition</label>
+      </div>
+
+      <!-- Вопрос 22 -->
+      <div class="question">
+        <p><strong>Вопрос 22:</strong> Какой элемент в истории Minecraft помог собрать большую аудиторию?</p>
+        <label><input type="radio" name="q22" value="1"> YouTube видео</label><br>
+        <label><input type="radio" name="q22" value="0"> Телевидение</label><br>
+        <label><input type="radio" name="q22" value="0"> Газеты</label><br>
+        <label><input type="radio" name="q22" value="0"> Блоги</label>
+      </div>
+
+      <!-- Вопрос 23 -->
+      <div class="question">
+        <p><strong>Вопрос 23:</strong> Какой год считается временем бурного роста популярности Minecraft?</p>
+        <label><input type="radio" name="q23" value="1"> 2011</label><br>
+        <label><input type="radio" name="q23" value="0"> 2008</label><br>
+        <label><input type="radio" name="q23" value="0"> 2015</label><br>
+        <label><input type="radio" name="q23" value="0"> 2005</label>
+      </div>
+
+      <!-- Вопрос 24 -->
+      <div class="question">
+        <p><strong>Вопрос 24:</strong> Какое событие ознаменовало коммерческий успех Minecraft?</p>
+        <label><input type="radio" name="q24" value="1"> Релиз официальной версии</label><br>
+        <label><input type="radio" name="q24" value="0"> Выпуск демо-версии</label><br>
+        <label><input type="radio" name="q24" value="0"> Первые модификации</label><br>
+        <label><input type="radio" name="q24" value="0"> Партнёрства с другими компаниями</label>
+      </div>
+
+      <!-- Вопрос 25 -->
+      <div class="question">
+        <p><strong>Вопрос 25:</strong> Какое влияние имела игра Minecraft на культуру геймеров?</p>
+        <label><input type="radio" name="q25" value="1"> Создание сообщества и креативное самовыражение</label><br>
+        <label><input type="radio" name="q25" value="0"> Снижение интереса к классическим играм</label><br>
+        <label><input type="radio" name="q25" value="0"> Ухудшение качества графики в играх</label><br>
+        <label><input type="radio" name="q25" value="0"> Рост продаж конкурирующих продуктов</label>
+      </div>
+
+      <button type="button" class="btn-check" onclick="checkQuiz()">Проверить результат</button>
+      <a href="../tests.html" class="btn-back">Назад</a>
+    </form>
+    <p id="result"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Minecraft Fan Site | Все права защищены</p>
+  </footer>
+
+  <script>
+    function checkQuiz() {
+      let score = 0;
+      for (let i = 1; i <= 25; i++) {
+        const selected = document.querySelector('input[name="q' + i + '"]:checked');
+        if (selected && selected.value === '1') {
+          score++;
+        }
+      }
+      document.getElementById("result").innerText = "Ты набрал " + score + " из 25 баллов!";
+    }
+  </script>
+</body>
+</html>

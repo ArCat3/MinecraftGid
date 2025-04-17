@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рейтинг мобов - Minecraft</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем Chart.js через CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .rating-section { max-width: 800px; margin: 0 auto; padding: 20px; }
+    h2 { margin-top: 30px; }
+    .btn { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; text-decoration: none; }
+    .btn-back { background-color: #555; margin-top: 20px; display: inline-block; }
+    .category { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Рейтинг враждебных мобов Minecraft</h1>
+    <p>Проголосуй за мобов по различным категориям!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="guides.html">Гайды</a></li>
+      <li><a href="mobs.html">Враждебные мобы</a></li>
+      <li><a href="tests.html">Тесты по Майнкрафту</a></li>
+      <li><a href="mob_rating.html">Рейтинг мобов</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="rating-section">
+      <form id="voteForm">
+        <!-- 1. Самый страшный -->
+        <div class="category">
+          <h2>Кто самый страшный моб?</h2>
+          <label><input type="radio" name="scariest" value="Крипер"> Крипер</label><br>
+          <label><input type="radio" name="scariest" value="Гаст"> Гаст</label><br>
+          <label><input type="radio" name="scariest" value="Дракон Края"> Дракон Края</label><br>
+          <label><input type="radio" name="scariest" value="Иссушитель"> Иссушитель</label>
+        </div>
+
+        <!-- 2. Самый сильный -->
+        <div class="category">
+          <h2>Кто самый сильный моб?</h2>
+          <label><input type="radio" name="strongest" value="Дракон Края"> Дракон Края</label><br>
+          <label><input type="radio" name="strongest" value="Иссушитель"> Иссушитель</label><br>
+          <label><input type="radio" name="strongest" value="Древний страж"> Древний страж</label><br>
+          <label><input type="radio" name="strongest" value="Железный голем (враждебный)"> Железный голем (враждебный)</label>
+        </div>
+
+        <!-- 3. Самый бесящий -->
+        <div class="category">
+          <h2>Кто самый бесящий моб?</h2>
+          <label><input type="radio" name="annoying" value="Фантом"> Фантом</label><br>
+          <label><input type="radio" name="annoying" value="Ведьма"> Ведьма</label><br>
+          <label><input type="radio" name="annoying" value="Летучая мышь"> Летучая мышь</label><br>
+          <label><input type="radio" name="annoying" value="Пустомордник"> Пустомордник</label>
+        </div>
+
+        <!-- 4. Самый милый -->
+        <div class="category">
+          <h2>Кто самый милый моб?</h2>
+          <label><input type="radio" name="cutest" value="Овечка"> Овечка</label><br>
+          <label><input type="radio" name="cutest" value="Кошка"> Кошка</label><br>
+          <label><input type="radio" name="cutest" value="Панда"> Панда</label><br>
+          <label><input type="radio" name="cutest" value="Белка"> Белка</label>
+        </div>
+
+        <!-- 5. Самый тупой -->
+        <div class="category">
+          <h2>Кто самый тупой моб?</h2>
+          <label><input type="radio" name="dumbest" value="Зомби"> Зомби</label><br>
+          <label><input type="radio" name="dumbest" value="Крипер"> Крипер</label><br>
+          <label><input type="radio" name="dumbest" value="Скелет"> Скелет</label><br>
+          <label><input type="radio" name="dumbest" value="Ведьма"> Ведьма</label>
+        </div>
+
+        <!-- 6. Самый экстремальный -->
+        <div class="category">
+          <h2>Кто самый экстремальный моб?</h2>
+          <label><input type="radio" name="extreme" value="Фантом"> Фантом</label><br>
+          <label><input type="radio" name="extreme" value="Иссушитель"> Иссушитель</label><br>
+          <label><input type="radio" name="extreme" value="Блейз"> Блейз</label><br>
+          <label><input type="radio" name="extreme" value="Дракон Края"> Дракон Края</label>
+        </div>
+
+        <!-- 7. Самый редкий -->
+        <div class="category">
+          <h2>Кто самый редкий моб?</h2>
+          <label><input type="radio" name="rarest" value="Дракон Края"> Дракон Края</label><br>
+          <label><input type="radio" name="rarest" value="Иссушитель"> Иссушитель</label><br>
+          <label><input type="radio" name="rarest" value="Древний страж"> Древний страж</label><br>
+          <label><input type="radio" name="rarest" value="Пиглин-король"> Пиглин-король</label>
+        </div>
+
+        <!-- 8. Самый быстрый -->
+        <div class="category">
+          <h2>Кто самый быстрый моб?</h2>
+          <label><input type="radio" name="fastest" value="Фантом"> Фантом</label><br>
+          <label><input type="radio" name="fastest" value="Эндермен"> Эндермен</label><br>
+          <label><input type="radio" name="fastest" value="Крипер"> Крипер</label><br>
+          <label><input type="radio" name="fastest" value="Блейз"> Блейз</label>
+        </div>
+
+        <!-- 9. Самый умный -->
+        <div class="category">
+          <h2>Кто самый умный моб?</h2>
+          <label><input type="radio" name="smartest" value="Эндермен"> Эндермен</label><br>
+          <label><input type="radio" name="smartest" value="Ведьма"> Ведьма</label><br>
+          <label><input type="radio" name="smartest" value="Пиглин"> Пиглин</label><br>
+          <label><input type="radio" name="smartest" value="Скелет"> Скелет</label>
+        </div>
+
+        <!-- 10. Самый опасный -->
+        <div class="category">
+          <h2>Кто самый опасный моб?</h2>
+          <label><input type="radio" name="mostDangerous" value="Дракон Края"> Дракон Края</label><br>
+          <label><input type="radio" name="mostDangerous" value="Иссушитель"> Иссушитель</label><br>
+          <label><input type="radio" name="mostDangerous" value="Гаст"> Гаст</label><br>
+          <label><input type="radio" name="mostDangerous" value="Ведьма"> Ведьма</label>
+        </div>
+
+        <!-- 11. Самый забавный -->
+        <div class="category">
+          <h2>Кто самый забавный моб?</h2>
+          <label><input type="radio" name="funniest" value="Панда"> Панда</label><br>
+          <label><input type="radio" name="funniest" value="Овечка"> Овечка</label><br>
+          <label><input type="radio" name="funniest" value="Курица"> Курица</label><br>
+          <label><input type="radio" name="funniest" value="Фантом"> Фантом</label>
+        </div>
+
+        <!-- 12. Самый нестандартный -->
+        <div class="category">
+          <h2>Кто самый нестандартный моб?</h2>
+          <label><input type="radio" name="unconventional" value="Пиглин"> Пиглин</label><br>
+          <label><input type="radio" name="unconventional" value="Эндермен"> Эндермен</label><br>
+          <label><input type="radio" name="unconventional" value="Ведьма"> Ведьма</label><br>
+          <label><input type="radio" name="unconventional" value="Фантом"> Фантом</label>
+        </div>
+
+        <button type="button" class="btn" onclick="submitVote()">Проголосовать</button>
+      </form>
+
+      <canvas id="resultChart" width="800" height="400"></canvas>
+      <br>
+      <a href="index.html" class="btn btn-back">← Назад</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Minecraft Fan Site | Все права защищены</p>
+  </footer>
+
+  <script>
+    // Объект для подсчёта голосов по категориям
+    let votes = {
+      scariest: {},
+      strongest: {},
+      annoying: {},
+      cutest: {},
+      dumbest: {},
+      extreme: {},
+      rarest: {},
+      fastest: {},
+      smartest: {},
+      mostDangerous: {},
+      funniest: {},
+      unconventional: {}
+    };
+
+    // Массив ключей (имен групп) для итерации
+    const categories = [
+      'scariest', 'strongest', 'annoying', 'cutest',
+      'dumbest', 'extreme', 'rarest', 'fastest',
+      'smartest', 'mostDangerous', 'funniest', 'unconventional'
+    ];
+
+    function submitVote() {
+      // Для каждой категории получаем выбранный вариант
+      categories.forEach(category => {
+        const selected = document.querySelector('input[name="' + category + '"]:checked');
+        if (!selected) {
+          alert("Выберите вариант для всех категорий!");
+          throw new Error("Не выбран вариант для категории " + category);
+        }
+        const mob = selected.value;
+        votes[category][mob] = (votes[category][mob] || 0) + 1;
+      });
+      showChart();
+    }
+
+    function showChart() {
+      // Создадим данные для каждой категории, используя имена мобов выбранных вариантов
+      // Для упрощения возьмем метки и данные из первой категории (scariest),
+      // затем покажем их для всех категорий в отдельных наборах.
+      const datasets = categories.map(category => {
+        const labels = Object.keys(votes[category]);
+        const data = labels.map(mob => votes[category][mob] || 0);
+        // Придумываем случайный цвет для набора
+        const bgColor = 'rgba(' + 
+                        Math.floor(Math.random() * 256) + ',' +
+                        Math.floor(Math.random() * 256) + ',' +
+                        Math.floor(Math.random() * 256) + ', 0.5)';
+        return {
+          label: category,
+          data: data,
+          backgroundColor: bgColor
+        };
+      });
+
+      // Если график уже создан, уничтожим его, чтобы не накладывать данные
+      if (window.voteChart) {
+        window.voteChart.destroy();
+      }
+
+      const ctx = document.getElementById('resultChart').getContext('2d');
+      window.voteChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          // Используем метки из первой категории (перед этим можно объединить все метки,
+          // но для простоты выберем первую)
+          labels: Object.keys(votes['scariest']),
+          datasets: datasets
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { position: 'top' },
+            title: { display: true, text: 'Результаты голосования по категориям' }
+          },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
